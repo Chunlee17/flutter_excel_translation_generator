@@ -3,10 +3,10 @@ import json
 import os
 os.environ["PYTHONIOENCODING"] = "utf-8"
 # excel file path
-EXCEL_FILE_PATH = 'C:\\Users\\Chunlee\\Desktop\\translation.xlsx'
+EXCEL_FILE_PATH = ''
 
 # excel sheet name
-SHEET_NAME = 'Translation'
+SHEET_NAME = ''
 
 # try:
 
