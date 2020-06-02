@@ -3,16 +3,15 @@ import json
 import os
 os.environ["PYTHONIOENCODING"] = "utf-8"
 # excel file path
-EXCEL_FILE_PATH = ''
+EXCEL_FILE_PATH = 'C:\\Users\\Chunlee\\Desktop\\translation.xlsx'
 
 # excel sheet name
-SHEET_NAME = ''
+SHEET_NAME = 'Translation'
 
 # try:
 
 try:
-    workbook = xlrd.open_workbook(
-        filename=EXCEL_FILE_PATH)
+    workbook = xlrd.open_workbook(filename=EXCEL_FILE_PATH)
     sheet = workbook.sheet_by_name(SHEET_NAME)
 
     language_count = sheet.ncols-1
