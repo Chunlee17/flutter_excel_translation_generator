@@ -3,7 +3,7 @@ import json
 import os
 os.environ["PYTHONIOENCODING"] = "utf-8"
 # excel file path
-EXCEL_FILE_PATH = 'C:\\Users\\Chunlee\\Desktop\\translation.xlsx'
+EXCEL_FILE_PATH = 'translation_example.xlsx'
 
 # excel sheet name
 SHEET_NAME = 'Translation'
@@ -34,5 +34,6 @@ try:
         # open and write dict to json
         with open(lang_name + '.json', 'w', encoding='utf-8') as outFile:
             json.dump(data, outFile, sort_keys=True, ensure_ascii=False)
-except:
-    print("Something went wrong. Please check your excel file")
+    print("File generated.")
+except Exception as e:
+    print("Error: " + str(e))
